@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Pylint Implementation and OOP Glossary
+    </title>
+    <meta name="description"
+          content="Pylint and OOP Glossary by Sebastian Fine">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="scrollBarDelete">
+<div class="headerContainer">
+    <div class="headerContainer pagetitle banner">
+        <span style="color: white">Pylint and Object-Oriented Programming</span>
+    </div>
+
+    <div class="headerContainer primarylinks" style="float: right; background-image: url('images/banner_image.jpg')" >
+        <a href="home.html">Home</a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Quick Access &#9660;
+            </button>
+            <div class="dropdown-content">
+                <a href="salesmen.html">The Entrepreneurs</a>
+                <a href="enablers.html">The Enablers</a>
+                <a href="builders.html">The Founders</a>
+                <a href="browsers.html">The Browsers</a>
+                <a href="isp.html">The Providers</a>
+                <a href="search.html">The Searchers</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 style="width:100%;font-size: 1.5rem;text-align: center;padding:inherit">
+    Implementing Pylint and understanding the basic terminology of object-oriented programming (OOP)
+    is a fundamental key to unlocking the potential of most coding languages!
+</h2>
+
+<div id="pageWrapper">
+    <article class="box" style="justify-content: flex-start">
+        <h3 style="font-size: 1.5rem">OOP Glossary</h3>
+        <img src="images/oop_thumbnail.svg" alt="Inheritance thumbnail for OOP">
+        <p style="grid-row-start: end;grid-column-start: end">
+            <span style="line-height: 1.5rem">
+                <span style="font-weight: bolder;text-decoration: underline;">Abstraction</span>
+                - Provides a separation from the user and the software, whereas in the calculator program the user knows to input a tuple and specify the operation to perform
+                but does not know the specific methodology in which the calculator is performing the operations and storage.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Arguments (Parameters)</span>
+                - An argument is a set of parameters to be passed for creating an instance of class, or object, or data to perform a function.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Class</span>
+                - A class contains methods and functions which create objects and their behaviors, such as the calculations class which stores the history of the calculators \
+                calculations.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Class Method</span>
+                - Class methods refer to method calls which are performed on classes rather than an identifier (class instances). For the calculator program this can be viewed within
+                the calculation.py file.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Constructor</span>
+                - A constructor is used to create an object. Constructors can take arguments to set initial values (such as Addition, Subtraction, Division, and Multiplication requiring
+                a tuple).
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Design Patterns</span>
+                - A type of Design Pattern (Behavior) used within the calculator program is the Command Pattern. Further reading of the various design pattern types can be viewed
+                <a href="https://www.oodesign.com/"> here.</a>
+                <span style="font-weight: bolder;text-decoration: underline;">Encapsulation</span>
+                - Encapsulation is utilized to group data and methods into one point of reference. The calculator program demonstrated encapsulation with the utilization of
+                class (such as calculations) which contain a set of methods that can store, recall, and evaluate other aspects of the initial tuple and subsequent tuples
+                passed to it.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Facade</span>
+                - A facade is a type of pattern which masks more complex software functions. A clearer example of a facade is the calculator class, which references to more complex structural
+                code to perform the method calculation and store to history.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;"> Factory</span>
+                    - For the calculator program, a <span style="font-weight: bold;text-decoration: underline"> factory method </span> is utilized in the calculation.py file within the calculations directory as
+                    the <span style="font-weight: bold">"create"</span> method that allows for an calculation object (Addition, Subtraction, Division, Multiplication) to be made with a tuple of values.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Fixture</span>
+                - A fixture is utilized, within the calculator program, as a way to establish sample data that is provided to each test without having to copy repetitive constructions of
+                the calculator Addition/Subtraction/Multiplication/Division objects.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Instantiation</span>
+                - In the context of the calculator one instance of instantiation is related to the calculations class where an object is created with a defined name.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Method</span>
+                - A method is a function/action that is performed on a variable with arguments (parameters) that can return output or change the state of the variable.
+                For the calculator program, there are methods which call methods from imported classes (add_number, subtract_number, ...)
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Namespace</span>
+                - A namespace is a defined region of visibility for a set of identifiers - such as the calculator being able to call Addition, Subtraction, Multiplication, and Division without
+                having to specify that it is within the calculator class.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Object</span>
+                - An object is an instance of a class, such as an instance of the calculations class, or set of functions and methods referred to by a singular identifier.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Property</span>
+                - Properties are the characteristics of an object, such that a calculator object can add_number, divide_number, subtract_number, or multiple_number. The object
+                can also return the last result. The properties of the calculator class are the tuple(s) of numbers and the result from the calculation performed on them.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Static</span>
+                - Statics refer to a method (for the calculator program) or variable which can be referenced across any instances of the class the method is contained within.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Type Cast</span>
+                - A type cast converts a given data type into another. For instance a list (mutable) can be cast to a tuple (immutable).
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Type Hint</span>
+                - A type hint is utilized by a function that accepts arguments to only allow specifically declared data types - such as the type hint for tuples.
+                <br>
+                <span style="font-weight: bolder;text-decoration: underline;">Unit Test</span>
+                - A unit test is often implemented to evaluate methods, or class for an interface, of a class. Unit tests were used within the calculator to demonstrate
+                the proper mathematical function, storage, and recall of given sets of tuples.
+            </span>
+        </p>
+
+    </article>
+
+    <article class="box">
+        <h3 style="font-size: 1.5rem">Pylint Tips and Tricks</h3>
+        <img src="images/python_logo.svg" alt="Python Logo">
+        <p>
+            Pylint is a powerful tool for reviewing the functionality, industry-conformity, and quality of written code. To install Pylint for <span style="font-weight: bold">Windows </span>
+            you must have pip installed within your environment. Running the command "pip install pylint" will download the packages to be able to use Pylint. If you are utilizing PyCharm, a
+            simple method to install Pylint follows the Preferences (File > Settings) > Plugins > Browse Repos and selecting Pylint for installation. If you have a requirements.txt file
+            there is a further ability to evaluate your tests and coverage by adding pytest-cov (along with pytest and pytest-pylint) and running the container.
+        </p>
+
+    </article>
+    <footer>
+        <span style="text-align: left">&#x00A9; <a href="https://github.com/finesebastian/History_Project.git">S. Fine, 2021</a> </span>
+        <span style="float: right; padding-right: 2rem"><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhistorywebsite.eastus.azurecontainer.io%2Fpylint.html"> W3C Validator</a></span>
+    </footer>
+</div>
+</body>
+</html>
