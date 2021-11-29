@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Separation of Concerns
+    </title>
+    <meta name="description"
+          content="Separation of Concerns by Sebastian Fine">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="scrollBarDelete">
+<div class="headerContainer">
+    <div class="headerContainer pagetitle banner">
+        <span style="color: white">Separation of Concerns (SoC)</span>
+    </div>
+
+    <div class="headerContainer primarylinks" style="float: right; background-image: url('images/banner_image.jpg')" >
+        <a href="home.html">Home</a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Quick Access &#9660;
+            </button>
+            <div class="dropdown-content">
+                <a href="browsers.html">The Browsers</a>
+                <a href="salesmen.html">The Entrepreneurs</a>
+                <a href="enablers.html">The Enablers</a>
+                <a href="builders.html">The Founders</a>
+                <a href="isp.html">The Providers</a>
+                <a href="pylint.html">Pylint</a>
+                <a href="search.html">The Searchers</a>
+                <a href="tutorialtest.html">Triple-A Testing</a>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 style="width:100%;font-size: 1.5rem;text-align: center;padding:inherit">
+    How the calculator program address the Object-Oriented-Programming idea of Separation of Concerns.
+</h2>
+
+<div id="pageWrapper">
+    <article class="box" style="justify-content: flex-start">
+        <h3 style="font-size: 1.5rem">Calculator SoC </h3>
+
+        <p style="width: 95%">
+            <span style="font-weight: bolder;text-decoration: underline;font-size: 1.5rem"> Example: </span><br><br>
+            <span> <img style="width: 90%;height: 20rem" src="images/soc_example.png" alt="Example of Separation of Concerns."></span><br><br>
+
+            <span style="font-weight: bold;text-decoration: underline">Separation of Concern</span> - Separation of Concern attempts to apply an organizational pattern to coding structure by
+            binning behaviors based on concern. Where a <span style="font-weight: bold;text-decoration: underline">concern</span> is defined as a "distinct behavior
+            or piece of knowledge your software deals with". <a style="display: inline;font-size: inherit" href="https://livebook.manning.com/book/code-like-a-pro/chapter-2/1">[1]</a>
+            This distinct method for separating functions ensures that a program is not one endless block of code.
+            <br><br>
+
+            <span style="font-weight: bold;text-decoration: underline">Functions</span> -
+            For the calculator program, a distinct component of the refactoring process was weighted on the simplification of function design
+            and separation of repeated actions into callable methods. For example, the add_history method which simplifies appending the Calculations
+            class history list and is utilized repeatedly to simplify further functions such as get_last_calculation_result.
+            <span> <img style="width: 90%;height: 50rem" src="images/function_concern.jpg" alt="Function Separation of Concern."></span><br><br>
+
+            <span style="font-weight: bold;text-decoration: underline">Modules</span> -
+            For the calculator program, module separation further applied this philosophy. Two distinct sets of tasks were established for the program:
+            performing the calculation and storing the resultant in history. Structurally this is observed through the multiple directories
+            with the classes grouped by task similarity.<br>
+            <span> <img  src="images/calculations_concerns.jpg" alt="Calculation Module Separation of Concern."></span><br><br>
+            <span> <img  style="height: fit-content" src="images/history_concern.jpg" alt="History Module Separation of Concern."></span><br><br>
+
+            Continuing with Separation of Concerns, two concurrent processes are also pressured: <span style="font-weight: bold;text-decoration: underline">
+            reducing coupling and heightening cohesion</span>.
+            <br><br>
+
+            <span style="font-weight: bold;text-decoration: underline">Coupling</span> - Interdependency between software
+            <a style="font-size: inherit;display: inline" href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">modules</a>.
+            <br><br>
+
+            <span style="font-weight: bold;text-decoration: underline">Cohesion</span> - How similar the elements within a module are to each
+            <a style="font-size: inherit;display: inline" href="https://en.wikipedia.org/wiki/Cohesion_(computer_science)">other</a>.
+            <br><br>
+
+            <span> <img  style="height: fit-content" src="images/coupling_cohesion.png" alt="Diagram explaining the interplay of coupling and cohesion."></span><br><br>
+
+            For the Calculator program the reduction of coupling and increased cohesion is impressed through the Calculator class importing the Calculations class, which
+            handles all related history functions and imports the individual calculation classes for operation handling. This limits interdependencies for each class upon another
+            beyond singular calls to create a (Addition/Subtraction/Multiplication/Division) objects or return results. Most importantly the methods and class creations within
+            the Calculator program follow a logical flow and do not abruptly jump between classes (logical boundaries).
+        </p>
+    </article>
+
+    <footer>
+        <span style="text-align: left">&#x00A9; <a href="https://github.com/finesebastian/History_Project.git">S. Fine, 2021</a> </span>
+        <span style="float: right; padding-right: 2rem"><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhistorywebsite.eastus.azurecontainer.io%2Fconcerns.html"> W3C Validator</a></span>
+    </footer>
+</div>
+</body>
+</html>
